@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martin Hellström</title>
+  <meta name="description" content="Tech Lead · Senior Full-Stack Engineer · Software Architect based in Sweden">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<canvas id="sakura-canvas" aria-hidden="true"></canvas>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<button id="eyeBtn" title="toggle terminal" aria-label="Toggle terminal visibility">&#9670;</button>
+
+<div class="container">
+  <div class="terminal" id="main" role="main">
+    <div class="prompt">
+      <span class="prompt-user">martin</span><span class="prompt-at">@</span><span class="prompt-host">hellstrom</span><span class="prompt-path"> ~/dev</span><span class="prompt-dollar">$</span>
+      <span>whoami --verbose</span>
+    </div>
+
+    <div class="name-block">
+      <div class="name">Martin<span>.</span>Hellström</div>
+      <div class="role">Tech Lead · Senior Full-Stack Engineer · Software Architect</div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="stat-label">Experience</div><div class="stat-value blue">5+ yrs</div></div>
+      <div class="stat"><div class="stat-label">Status</div><div class="stat-value ok">online</div></div>
+      <div class="stat"><div class="stat-label">Location</div><div class="stat-value">Sweden</div></div>
+      <div class="stat"><div class="stat-label">Role</div><div class="stat-value blue">Tech Lead</div></div>
+      <div class="stat"><div class="stat-label">Certs</div><div class="stat-value ok">2 active</div></div>
+      <div class="stat"><div class="stat-label">Stack</div><div class="stat-value">.NET · Blazor</div></div>
+    </div>
+
+    <div class="output">
+      <div class="output-line"><span class="arrow"></span><span class="text">Tech lead on a greenfield <span class="highlight">event-sourced, multi-tenant platform</span>. Seven bounded contexts, three web clients, one API</span></div>
+      <div class="output-line"><span class="arrow"></span><span class="text">Outbox over pub/sub, an <span class="highlight">append-only ledger</span> with rebuildable projections, tenant-scoped realtime, <span class="highlight">Kubernetes and Terraform</span> underneath</span></div>
+      <div class="output-line"><span class="arrow"></span><span class="text">Certified <span class="highlight">Software Architect</span> — Sundblad & Sundblad, 2025</span></div>
+      <div class="output-line"><span class="arrow"></span><span class="text">Under NDA, so no repo. Type <span class="highlight">arch</span> below for the architecture</span></div>
+    </div>
+
+    <div class="stack">
+      <div class="stack-label">$ cat tech-stack.txt</div>
+      <div class="tags">
+        <span class="tag hot">C#</span><span class="tag hot">.NET</span><span class="tag hot">Blazor</span>
+        <span class="tag hot">Event Sourcing</span><span class="tag hot">Kubernetes</span><span class="tag hot">SQL Server</span>
+        <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">SignalR</span>
+        <span class="tag">Entity Framework</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span>
+        <span class="tag">Azure</span><span class="tag">Terraform</span><span class="tag">Docker</span>
+        <span class="tag">OpenTelemetry</span><span class="tag">GraphQL</span><span class="tag">Azure DevOps</span>
+        <span class="tag">BizTalk</span><span class="tag">XSLT</span>
+      </div>
+    </div>
+
+    <div class="links">
+      <a class="link-line" href="https://linkedin.com/in/martin-hellstrom" target="_blank">
+        <span class="link-key">linkedin</span><span class="link-sep">//</span>
+        <span class="link-val">martin-hellstrom</span><span class="link-arrow">↗</span>
+      </a>
+      <a class="link-line" href="https://github.com/daggmask" target="_blank">
+        <span class="link-key">github</span><span class="link-sep">//</span>
+        <span class="link-val">daggmask</span><span class="link-arrow">↗</span>
+      </a>
+      <button class="link-line copy-email" id="copyEmail" aria-label="Copy email address">
+        <span class="link-key">email</span><span class="link-sep">//</span>
+        <span class="link-val" id="emailVal">martver12@gmail.com</span><span class="link-arrow" id="copyIcon">⎘</span>
+      </button>
+    </div>
+
+    <div class="ticker-wrap">
+      <div class="ticker-label">> sys.log</div>
+      <div class="ticker-track">
+        <div class="ticker-content" id="ticker">
+          husband &amp; father &nbsp;·&nbsp; family first, always &nbsp;·&nbsp; long $TECH &nbsp;·&nbsp; buy the dip &nbsp;·&nbsp; gg &nbsp;·&nbsp; building in prod &nbsp;·&nbsp; markets never sleep &nbsp;·&nbsp; raising tiny humans &nbsp;·&nbsp; craft over hype &nbsp;·&nbsp; observe · evaluate · execute &nbsp;·&nbsp; champion is only another stepping stone &nbsp;·&nbsp; profit in bull and bear &nbsp;·&nbsp; go with the flow &nbsp;·&nbsp; mistakes build character &nbsp;·&nbsp; pressure is where legends are made &nbsp;·&nbsp; floating and staring at the stars &nbsp;·&nbsp; the emperor protects &nbsp;·&nbsp; my little princess is my everything &nbsp;·&nbsp; girl-dad.. &nbsp;·&nbsp; total war is my jam &nbsp;·&nbsp; DYOR &gt; blindly following &nbsp;·&nbsp; love &gt; everything &nbsp;·&nbsp; husband &amp; father &nbsp;·&nbsp; family first, always &nbsp;·&nbsp; long $TECH &nbsp;·&nbsp; buy the dip &nbsp;·&nbsp; gg &nbsp;·&nbsp; building in prod &nbsp;·&nbsp; markets never sleep &nbsp;·&nbsp; raising tiny humans &nbsp;·&nbsp; craft over hype &nbsp;·&nbsp; observe · evaluate · execute &nbsp;·&nbsp; champion is only another stepping stone &nbsp;·&nbsp; profit in bull and bear &nbsp;·&nbsp; go with the flow &nbsp;·&nbsp; mistakes build character &nbsp;·&nbsp; pressure is where legends are made &nbsp;·&nbsp; floating and staring at the stars &nbsp;·&nbsp; the emperor protects &nbsp;·&nbsp; my little princess is my everything &nbsp;·&nbsp; girl-dad.. &nbsp;·&nbsp; total war is my jam &nbsp;·&nbsp; DYOR &gt; blindly following &nbsp;·&nbsp; love &gt; everything &nbsp;·&nbsp;
+        </div>
+      </div>
+    </div>
+
+    <div class="console-wrap">
+      <div class="console-history" id="console-history"></div>
+      <div class="console-input-row">
+        <span class="prompt-user">martin</span><span class="prompt-at">@</span><span class="prompt-host">hellstrom</span><span class="prompt-path"> ~/dev</span><span class="prompt-dollar">$</span>
+        <input class="console-input" id="console-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="type 'help' to get started..." />
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">daggmask.github.io · sweden · husband & father · long $TECH · gg</div>
+</div>
+
+  <script src="./js/canvas.js" defer></script>
+  <script src="./js/terminal.js" defer></script>
+</body>
+</html>
